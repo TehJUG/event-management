@@ -1,0 +1,1 @@
+package ir.hesamghiasi.softwareengineering.jug.projects.eventmanagement.usecase.dto;
