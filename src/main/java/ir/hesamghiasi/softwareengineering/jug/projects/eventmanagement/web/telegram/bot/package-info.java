@@ -1,1 +1,0 @@
-package ir.hesamghiasi.softwareengineering.jug.projects.eventmanagement.web.telegram.bot;
