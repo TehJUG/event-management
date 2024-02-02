@@ -26,7 +26,7 @@ import java.util.Set;
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
 public abstract class Event extends BaseEntity<Long> {
 
-//       Online  -> /date, /time, /title, /tags, /price, /description, /picture, /capacity, category, timetable,  ----- platform, link
+//       Online  -> /date, /time, /title, /tags, /price, /description, /picture, /capacity, category, timetable,  ----- CommunicationTool, link
 //       Offline -> date, time, title, tags, price, description, picture, capacity, category, timetable,  ----- address, location on map,
 
     @NotNull

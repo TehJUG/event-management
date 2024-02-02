@@ -1,7 +1,7 @@
 package ir.tehran.jug.projects.eventmanagement.data.entities.events;
 
 
-import ir.tehran.jug.projects.eventmanagement.data.entities.enums.Platform;
+import ir.tehran.jug.projects.eventmanagement.data.entities.enums.CommunicationTool;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -17,9 +17,9 @@ import lombok.experimental.SuperBuilder;
 @Table(name = "event")
 public class OnlineEvent extends Event {
 
-    //    platform, link
+    //    CommunicationTool, link
 
-    private Platform platform;
+    private CommunicationTool platform;
     private String link;
 
 
