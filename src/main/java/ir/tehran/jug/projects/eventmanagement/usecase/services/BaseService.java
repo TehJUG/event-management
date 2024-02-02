@@ -1,6 +1,6 @@
-package ir.tehran.jug.projects.eventmanagement.data.base.service;
+package ir.tehran.jug.projects.eventmanagement.usecase.services;
 
-import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
+import ir.tehran.jug.projects.eventmanagement.data.entities.BaseEntity;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,9 +1,9 @@
-package ir.tehran.jug.projects.eventmanagement.data.base.service.impl;
+package ir.tehran.jug.projects.eventmanagement.usecase.services.impl;
 
 
-import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
-import ir.tehran.jug.projects.eventmanagement.data.base.repository.BaseRepository;
-import ir.tehran.jug.projects.eventmanagement.data.base.service.BaseService;
+import ir.tehran.jug.projects.eventmanagement.data.entities.BaseEntity;
+import ir.tehran.jug.projects.eventmanagement.data.repositories.BaseRepository;
+import ir.tehran.jug.projects.eventmanagement.usecase.services.BaseService;
 import jakarta.persistence.EntityNotFoundException;
 
 

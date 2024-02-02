@@ -1,6 +1,5 @@
 package ir.tehran.jug.projects.eventmanagement.data.entities;
 
-import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
 import ir.tehran.jug.projects.eventmanagement.data.entities.events.Event;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -18,7 +17,7 @@ import java.util.Set;
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "CATEGORIES")
+@Table(name = "category")
 public class Category extends BaseEntity<Long> {
 
     @Column(unique = true)

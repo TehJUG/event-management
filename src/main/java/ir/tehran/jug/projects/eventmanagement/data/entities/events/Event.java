@@ -1,7 +1,7 @@
 
 package ir.tehran.jug.projects.eventmanagement.data.entities.events;
 
-import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
+import ir.tehran.jug.projects.eventmanagement.data.entities.BaseEntity;
 import ir.tehran.jug.projects.eventmanagement.data.entities.Category;
 import ir.tehran.jug.projects.eventmanagement.data.entities.Tag;
 import jakarta.persistence.*;
@@ -22,11 +22,11 @@ import java.util.Set;
 @SuperBuilder
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-@Table(name = "EVENTS")
+@Table(name = "event")
 @DiscriminatorColumn(name = "type", discriminatorType = DiscriminatorType.STRING)
 public abstract class Event extends BaseEntity<Long> {
 
-//       Online  -> /date, /time, /title, /tags, /price, /description, /picture, /capacity, category, timetable,  ----- platform, link
+//       Online  -> /date, /time, /title, /tags, /price, /description, /picture, /capacity, category, timetable,  ----- CommunicationTool, link
 //       Offline -> date, time, title, tags, price, description, picture, capacity, category, timetable,  ----- address, location on map,
 
     @NotNull
