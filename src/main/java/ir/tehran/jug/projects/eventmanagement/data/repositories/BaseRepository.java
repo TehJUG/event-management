@@ -1,7 +1,6 @@
 package ir.tehran.jug.projects.eventmanagement.data.repositories;
 
 import ir.tehran.jug.projects.eventmanagement.data.entities.BaseEntity;
-import ir.tehran.jug.projects.eventmanagement.data.entities.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.io.Serializable;
