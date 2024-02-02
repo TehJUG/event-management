@@ -1,4 +1,4 @@
-package ir.tehran.jug.projects.eventmanagement.data.base.entity;
+package ir.tehran.jug.projects.eventmanagement.data.entities;
 
 import jakarta.persistence.*;
 import jakarta.persistence.MappedSuperclass;

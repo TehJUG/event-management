@@ -1,7 +1,7 @@
 
 package ir.tehran.jug.projects.eventmanagement.data.entities.events;
 
-import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
+import ir.tehran.jug.projects.eventmanagement.data.entities.BaseEntity;
 import ir.tehran.jug.projects.eventmanagement.data.entities.Category;
 import ir.tehran.jug.projects.eventmanagement.data.entities.Tag;
 import jakarta.persistence.*;
