@@ -1,4 +1,4 @@
-package ir.tehran.jug.projects.eventmanagement.data.base.repository;
+package ir.tehran.jug.projects.eventmanagement.data.repositories;
 
 import ir.tehran.jug.projects.eventmanagement.data.base.entity.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
