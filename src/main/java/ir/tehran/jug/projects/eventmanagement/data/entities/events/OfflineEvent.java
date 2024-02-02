@@ -13,7 +13,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "EVENTS")
+@Table(name = "event")
 public class OfflineEvent extends Event {
 
 //    address, location on map

@@ -14,7 +14,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "ONLINE_EVENTS")
+@Table(name = "event")
 public class OnlineEvent extends Event {
 
     //    platform, link

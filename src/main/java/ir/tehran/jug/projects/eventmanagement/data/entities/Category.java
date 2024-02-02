@@ -18,7 +18,7 @@ import java.util.Set;
 @NoArgsConstructor
 @SuperBuilder
 @Entity
-@Table(name = "CATEGORIES")
+@Table(name = "category")
 public class Category extends BaseEntity<Long> {
 
     @Column(unique = true)
