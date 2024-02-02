@@ -6,6 +6,8 @@ import ir.tehran.jug.projects.eventmanagement.usecase.services.TagService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class TagServiceImpl extends BaseServiceImpl<Tag, Long, TagRepository> implements TagService {
     public TagServiceImpl(TagRepository repository) {
@@ -13,9 +15,9 @@ public class TagServiceImpl extends BaseServiceImpl<Tag, Long, TagRepository> im
     }
 
     @Override
-    public Tag findByTagTitle(String tagTitle) {
-        Tag tag = repository.findByTitle(tagTitle);
-        if (tag == null)
+    public Optional<Tag> findByTagTitle(String tagTitle) {
+        Optional<Tag> tag = repository.findByTitle(tagTitle);
+        if (tag.isEmpty())
             throw new EntityNotFoundException("Entity not exist");
         return tag;
     }

@@ -6,6 +6,8 @@ import ir.tehran.jug.projects.eventmanagement.usecase.services.CategoryService;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class CategoryServiceImpl extends BaseServiceImpl<Category, Long, CategoryRepository> implements CategoryService {
     public CategoryServiceImpl(CategoryRepository repository) {
@@ -13,9 +15,9 @@ public class CategoryServiceImpl extends BaseServiceImpl<Category, Long, Categor
     }
 
     @Override
-    public Category findByCategoryTitle(String categoryTitle) {
-        Category category = repository.findByTitle(categoryTitle);
-        if (category == null)
+    public Optional <Category> findByCategoryTitle(String categoryTitle) {
+        Optional <Category> category = repository.findByTitle(categoryTitle);
+        if (category.isEmpty())
             throw new EntityNotFoundException("Entity not exist");
         return category;
     }
