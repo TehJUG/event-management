@@ -36,6 +36,6 @@ public class User extends BaseEntity<Long> {
     private String email;
 
     @OneToMany(mappedBy = "user")
-    private Set<Organization> organizationList = new HashSet<>();
+    private Set<Organizer> organizerList = new HashSet<>();
 
 }
