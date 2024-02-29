@@ -1,7 +1,6 @@
 package ir.tehran.jug.projects.eventmanagement.data.repositories;
 
-import ir.tehran.jug.projects.eventmanagement.data.base.repository.BaseRepository;
-import ir.tehran.jug.projects.eventmanagement.data.entities.Organization;
+import ir.tehran.jug.projects.eventmanagement.data.entities.Organizer;
 
-public interface OrganizationRepository extends BaseRepository<Organization, Long> {
+public interface OrganizationRepository extends BaseRepository<Organizer, Long> {
 }

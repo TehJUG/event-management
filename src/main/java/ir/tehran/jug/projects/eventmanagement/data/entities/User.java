@@ -3,6 +3,7 @@ package ir.tehran.jug.projects.eventmanagement.data.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -16,6 +17,7 @@ import java.util.Set;
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Data
+@Table(name = "users")
 @Entity
 public class User extends BaseEntity<Long> {
 
@@ -36,6 +38,6 @@ public class User extends BaseEntity<Long> {
     private String email;
 
     @OneToMany(mappedBy = "user")
-    private Set<Organization> organizationList = new HashSet<>();
+    private Set<Organizer> organizerList = new HashSet<>();
 
 }

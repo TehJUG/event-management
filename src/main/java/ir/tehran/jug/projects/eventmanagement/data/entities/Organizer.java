@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-public class Organization extends BaseEntity<Long> {
+public class Organizer extends BaseEntity<Long> {
 
     @NotBlank(message = "Name can not be empty!")
     private String name;
